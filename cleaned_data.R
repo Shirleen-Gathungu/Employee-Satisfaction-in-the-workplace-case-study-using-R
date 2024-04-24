@@ -48,3 +48,7 @@ cleaned_employee_data <- cleaned_employee_data %>%
   ))
 
 
+# Converting satisfaction_level and last_evaluation to percentage form
+cleaned_employee_data$satisfaction_level <- cleaned_employee_data$satisfaction_level * 100
+cleaned_employee_data$last_evaluation <- cleaned_employee_data$last_evaluation * 100
+
